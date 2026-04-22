@@ -30,9 +30,9 @@ function updateImg() {
   } else if (currentImg < 1) {
     currentImg = imgsEl.length;
   }
-  imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+  imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 800}px)`;
   timeout = setTimeout(() => {
     currentImg++;
     updateImg();
-  }, 2000);
+  }, 4000);
 }
